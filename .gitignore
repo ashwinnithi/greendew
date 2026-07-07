@@ -1,0 +1,37 @@
+# Logs
+logs
+*.log
+npm-debug.log*
+
+# Runtime data
+pids
+*.pid
+*.seed
+*.pid.lock
+
+# Dependency directories
+node_modules/
+jspm_packages/
+
+# Optional npm cache directory
+.npm
+
+# Output directory (static exports/builds)
+.next/
+out/
+build/
+dist/
+
+# Browser profiles and temporary folders
+chrome-profile/
+chrome-profile-*/
+chrome_debug.log
+
+# Sibling duplicate directories
+repo/
+Product_listing_site_real_bak/
+Product_listing_site_temp/
+
+# OS Files
+.DS_Store
+Thumbs.db
