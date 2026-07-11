@@ -132,11 +132,13 @@
 
     const endpoint = window.GOOGLE_SCRIPT_ENDPOINT || "https://script.google.com/macros/s/AKfycbq/exec";
 
-    // Submit via POST
+    // Submit via POST using no-cors mode to bypass Google Apps Script redirect CORS blocks,
+    // and text/plain to bypass browser OPTIONS preflight requests.
     fetch(endpoint, {
       method: "POST",
+      mode: "no-cors",
       headers: {
-        "Content-Type": "application/json"
+        "Content-Type": "text/plain"
       },
       body: JSON.stringify(data)
     })
